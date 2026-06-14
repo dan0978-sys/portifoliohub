@@ -37,7 +37,4 @@ O gerenciamento e rastreabilidade do código do PortfolioHUB foram mantidos atra
 ---Portifólio: https://8000-iazlnxa8kd5umpzgiugi0-a2b659f7.us1.manus.computer/
 
 
----https://github.com/dan0978-sys/portifoliohub
-
-
 *Desafio PortfolioHUB — Memorial de Implantação Final | Atualizado em 14/06/2026*
