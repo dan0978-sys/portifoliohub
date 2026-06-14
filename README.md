@@ -40,8 +40,8 @@ O gerenciamento e rastreabilidade do código do PortfolioHUB foram mantidos atra
 ---
 
 ## 6. Links do Projeto
-* **Repositório do Código:** [https://github.com/dan0978-sys/portfoliohub](https://github.com/dan0978-sys/portfoliohub)
-* **Portfólio Online (Live):** [https://dan0978-sys.github.io/portfoliohub/](https://dan0978-sys.github.io/portfoliohub/)
+* **Repositório do Código:** [https://github.com/dan0978-sys/portifoliohub](https://github.com/dan0978-sys/portifoliohub)
+* **Portfólio Online (Live):** [https://dan0978-sys.github.io/portifoliohub/](https://dan0978-sys.github.io/portifoliohub/)
 
 ---
-*Desafio PortfolioHUB — Memorial de Implantação Final | Atualizado em 14/06/202
+*Desafio PortfolioHUB — Memorial de Implantação Final | Atualizado em 14/06/2026*
