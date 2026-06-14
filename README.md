@@ -35,5 +35,7 @@ O gerenciamento e rastreabilidade do código do PortfolioHUB foram mantidos atra
 * **Ambiente de Produção:** O PortfolioHUB foi lançado e publicado com sucesso para uso real na internet por meio do recurso **GitHub Pages**, garantindo uma aplicação totalmente estática, rápida e estável em ambiente de nuvem.
 
 ---https://8000-iazlnxa8kd5umpzgiugi0-a2b659f7.us1.manus.computer/
+
+
 ---https://github.com/dan0978-sys/portifoliohub
 *Desafio PortfolioHUB — Memorial de Implantação Final | Atualizado em 14/06/2026*
