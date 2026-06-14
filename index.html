@@ -3,82 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioHUB | Implantação Final</title>
+    <title>PortfolioHUB | dan0978-sys</title>
     <style>
         :root {
-            --primary-color: #24292e; 
-            --accent-color: #0366d6;  
-            --bg-color: #f6f8fa;
-            --card-bg: #ffffff;
-            --text-color: #24292e;
-            --border-color: #e1e4e8;
+            --bg-principal: #0d1117;       /* Fundo escuro estilo GitHub Dark */
+            --bg-card: #161b22;            /* Fundo dos cards */
+            --texto-principal: #c9d1d9;    /* Texto claro */
+            --texto-secundario: #8b949e;   /* Texto cinza para descrições */
+            --cor-borda: #30363d;          /* Bordas sutis */
+            --cor-link: #58a6ff;           /* Azul de destaque para links */
+            --cor-sucesso: #238636;        /* Verde para botões e badges */
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-principal);
+            color: var(--texto-principal);
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             line-height: 1.6;
         }
 
         header {
-            background-color: var(--primary-color);
-            color: white;
+            border-bottom: 1px solid var(--cor-borda);
             padding: 40px 20px;
             text-align: center;
+            background-color: var(--bg-card);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            color: #f0f6fc;
         }
 
         header p {
             margin: 10px 0 0;
             font-size: 1.1rem;
-            color: #8b949e;
+            color: var(--texto-secundario);
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
         section {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            border: 1px solid var(--cor-borda);
             border-radius: 6px;
             padding: 24px;
             margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         h2 {
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--cor-borda);
             padding-bottom: 8px;
             margin-top: 0;
-            color: var(--primary-color);
+            color: #f0f6fc;
         }
 
         h3 {
-            color: var(--primary-color);
+            color: #f0f6fc;
             margin-top: 20px;
         }
 
-        .profile-info {
+        .profile-section {
             display: flex;
             align-items: center;
             gap: 20px;
         }
 
-        .profile-info img {
-            width: 100px;
-            height: 100px;
+        .profile-section img {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            border: 2px solid var(--accent-color);
+            border: 2px solid var(--cor-link);
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--texto-principal);
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         .grid-projetos {
@@ -89,54 +99,51 @@
         }
 
         .card-projeto {
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--cor-borda);
             border-radius: 6px;
             padding: 16px;
-            background: #fafbfc;
-            transition: transform 0.2s;
-        }
-
-        .card-projeto:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: var(--bg-principal);
         }
 
         .card-projeto h3 {
             margin: 0 0 10px;
-            color: var(--accent-color);
+            color: var(--cor-link);
         }
 
-        .btn-github {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            margin-top: 10px;
-        }
-
-        .btn-github:hover {
-            background-color: #555;
-        }
-
-        .badge-seguranca {
-            background-color: #dafbe1;
-            color: #1a7f37;
+        .badge {
+            background-color: #21262d;
+            color: var(--texto-secundario);
             padding: 4px 8px;
             border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
+            font-size: 0.8rem;
+            border: 1px solid var(--cor-borda);
             display: inline-block;
             margin-bottom: 10px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--cor-sucesso);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        .btn-link:hover {
+            background-color: #2ea44f;
         }
 
         footer {
             text-align: center;
             padding: 40px 20px;
-            color: #586069;
-            font-size: 0.9rem;
+            color: var(--texto-secundario);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--cor-borda);
+            margin-top: 60px;
         }
     </style>
 </head>
@@ -151,52 +158,54 @@
 
         <section id="perfil">
             <h2>Estudante</h2>
-            <div class="profile-info">
-                <img src="https://github.com/diiriibeiiro01.png" alt="Foto de Perfil">
+            <div class="profile-section">
+                <img src="https://github.com/dan0978-sys.png" alt="Foto de Perfil do GitHub">
                 <div>
-                    <h3>@diiriibeiiro01</h3>
-                    <p>Desenvolvedor em Construção | Portfólio acadêmico voltado para a integração de ferramentas ágeis e controle de versão seguro.</p>
-                    <p><strong>GitHub Oficial:</strong> <a href="https://github.com/diiriibeiiro01" target="_blank" style="color: var(--accent-color);">github.com/diiriibeiiro01</a></p>
+                    <h3>dan0978-sys</h3>
+                    <p>Desenvolvedor em Construção | Portfólio focado em arquitetura ágil, segurança de credenciais e versionamento estruturado.</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/dan0978-sys" target="_blank" style="color: var(--cor-link);">github.com/dan0978-sys</a></p>
                 </div>
             </div>
         </section>
 
         <section id="documentacao">
-            <h2>Memorial de Implantação</h2>
+            <h2>Memorial de Implantação e Governança</h2>
             
-            <h3>1. Planejamento e Configuração Inicial</h3>
-            <p>O plano de implantação foi estruturado utilizando o suporte estratégico do Google GEMINI para guiar a trilha de desenvolvimento[cite: 24]. O ambiente Git local foi devidamente inicializado e conectado ao repositório remoto do GitHub, permitindo o armazenamento seguro de todo o escopo do projeto[cite: 26, 28].</p>
+            <h3>1. Planejamento da Implantação</h3>
+            <p>O ciclo de vida da implantação da infraestrutura foi integralmente arquitetado utilizando o suporte e a inteligência do Google GEMINI como guia estratégico, estabelecendo a correta parametrização de pastas e inicialização do ambiente.</p>
 
-            <h3>2. Gestão de Usuários e Políticas de Segurança</h3>
-            <p>Em conformidade com as diretrizes do projeto, foram aplicadas as melhores práticas de segurança sugeridas pelo Google GEMINI[cite: 34]:</p>
+            <h3>2. Configuração Inicial e Integração com GitHub</h3>
+            <p>Foi estabelecido um repositório dedicado hospedado no GitHub para centralizar o armazenamento do código do PortfolioHUB, integrando os recursos locais de desenvolvimento ao versionamento remoto síncrono.</p>
+
+            <h3>3. Gestão de Usuários e Políticas de Segurança</h3>
+            <p>Alinhado com as orientações do Google GEMINI para garantir a conformidade normativa e as melhores práticas de mercado:</p>
             <ul>
-                <li>Isolamento de credenciais locais de acesso.</li>
-                <li>Monitoramento ativo para evitar a exposição acidental de dados privados ou chaves no código público.</li>
-                <li>Configuração correta do controle de acesso direto no repositório GitHub[cite: 32].</li>
+                <li><strong>Isolamento de Credenciais:</strong> Configuração e controle restrito de identidade local e autenticação do usuário do Git através do VS Code.</li>
+                <li><strong>Proteção de Repositórios:</strong> Emprego de diretrizes para salvaguardar chaves criptográficas, tokens de APIs e chaves privadas, prevenindo vazamentos acidentais em repositórios públicos.</li>
             </ul>
 
-            <h3>3. Compartilhamento e Controle de Versão</h3>
-            <p>O controle de versão foi implementado integralmente por meio do Git através do VS Code[cite: 36]. Toda a árvore de commits documenta o histórico do desenvolvimento de forma incremental e colaborativa[cite: 36, 37].</p>
+            <h3>4. Finalização da Integração, Testes e Produção</h3>
+            <p>A fase de homologação validou a integridade da aplicação estruturada em HTML5 e CSS3 nativos. O ambiente foi preparado e publicado com sucesso para lançamento em ambiente de produção real através do recurso GitHub Pages.</p>
         </section>
 
         <section id="projetos">
-            <h2>Repositórios Integrados</h2>
-            <p>Abaixo estão listados os projetos vinculados ao ecossistema PortfolioHUB[cite: 28]:</p>
+            <h2>Projetos Centralizados</h2>
+            <p>Repositórios ativos e sincronizados com a plataforma PortfolioHUB:</p>
             
             <div class="grid-projetos">
                 
                 <div class="card-projeto">
-                    <span class="badge-seguranca">Produção Ativa</span>
-                    <h3>PortfolioHUB</h3>
-                    <p>Repositório principal contendo a estrutura semântica, estilização e documentação técnica da implantação geral da plataforma[cite: 8].</p>
-                    <a href="https://github.com/diiriibeiiro01/portfoliohub" target="_blank" class="btn-github">Acessar Repositório</a>
+                    <span class="badge">Repositório Oficial</span>
+                    <h3>portfoliohub</h3>
+                    <p>Contém toda a árvore de arquivos, histórico de commits sequenciais e a documentação técnica da implantação estrutural da plataforma.</p>
+                    <a href="https://github.com/dan0978-sys/portfoliohub" target="_blank" class="btn-link">Acessar Código</a>
                 </div>
 
                 <div class="card-projeto">
-                    <span class="badge-seguranca">Hospedagem Pages</span>
-                    <h3>GitHub Pages Deployment</h3>
-                    <p>Ambiente configurado para publicação contínua em produção, permitindo o uso real e visualização pública da aplicação[cite: 43].</p>
-                    <a href="https://diiriibeiiro01.github.io/portfoliohub/" target="_blank" class="btn-github">Ver Site Online</a>
+                    <span class="badge">Ambiente de Produção</span>
+                    <h3>GitHub Pages Live</h3>
+                    <p>Instância online e pública do projeto, configurada para entrega automatizada de atualizações estáveis na internet.</p>
+                    <a href="https://dan0978-sys.github.io/portfoliohub/" target="_blank" class="btn-link">Ver Site Online</a>
                 </div>
 
             </div>
@@ -205,7 +214,7 @@
     </div>
 
     <footer>
-        <p>Desafio PortfolioHUB — Entrega Final | Atualizado em 14/06/2026 </p>
+        <p>Desafio PortfolioHUB — Entrega Final | Atualizado em 14/06/2026</p>
     </footer>
 
 </body>
