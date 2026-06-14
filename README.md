@@ -34,7 +34,7 @@ O gerenciamento e rastreabilidade do código do PortfolioHUB foram mantidos atra
 * **Homologação:** O código passou por testes de validação semântica e responsividade estrutural em navegadores web utilizando as diretrizes da IA GEMINI como referência de qualidade.
 * **Ambiente de Produção:** O PortfolioHUB foi lançado e publicado com sucesso para uso real na internet por meio do recurso **GitHub Pages**, garantindo uma aplicação totalmente estática, rápida e estável em ambiente de nuvem.
 
----Portifólio: https://8000-iazlnxa8kd5umpzgiugi0-a2b659f7.us1.manus.computer/
+---Portifólio: https://dan0978-sys.github.io/portifoliohub/
 
 
 *Desafio PortfolioHUB — Memorial de Implantação Final | Atualizado em 14/06/2026*
