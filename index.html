@@ -3,219 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioHUB | dan0978-sys</title>
-    <style>
-        :root {
-            --bg-principal: #0d1117;       /* Fundo escuro estilo GitHub Dark */
-            --bg-card: #161b22;            /* Fundo dos cards */
-            --texto-principal: #c9d1d9;    /* Texto claro */
-            --texto-secundario: #8b949e;   /* Texto cinza para descrições */
-            --cor-borda: #30363d;          /* Bordas sutis */
-            --cor-link: #58a6ff;           /* Azul de destaque para links */
-            --cor-sucesso: #238636;        /* Verde para botões e badges */
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-principal);
-            color: var(--texto-principal);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            border-bottom: 1px solid var(--cor-borda);
-            padding: 40px 20px;
-            text-align: center;
-            background-color: var(--bg-card);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            color: #f0f6fc;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.1rem;
-            color: var(--texto-secundario);
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: var(--bg-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 6px;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            border-bottom: 1px solid var(--cor-borda);
-            padding-bottom: 8px;
-            margin-top: 0;
-            color: #f0f6fc;
-        }
-
-        h3 {
-            color: #f0f6fc;
-            margin-top: 20px;
-        }
-
-        .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .profile-section img {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            border: 2px solid var(--cor-link);
-        }
-
-        ul {
-            padding-left: 20px;
-            color: var(--texto-principal);
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .grid-projetos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
-            margin-top: 20px;
-        }
-
-        .card-projeto {
-            border: 1px solid var(--cor-borda);
-            border-radius: 6px;
-            padding: 16px;
-            background: var(--bg-principal);
-        }
-
-        .card-projeto h3 {
-            margin: 0 0 10px;
-            color: var(--cor-link);
-        }
-
-        .badge {
-            background-color: #21262d;
-            color: var(--texto-secundario);
-            padding: 4px 8px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            border: 1px solid var(--cor-borda);
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .btn-link {
-            display: inline-block;
-            background-color: var(--cor-sucesso);
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-top: 12px;
-        }
-
-        .btn-link:hover {
-            background-color: #2ea44f;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--texto-secundario);
-            font-size: 0.85rem;
-            border-top: 1px solid var(--cor-borda);
-            margin-top: 60px;
-        }
-    </style>
+    <title>Portfolio Hub Moderno | dan0978-sys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>PortfolioHUB + IA GEMINI</h1>
-        <p>Plataforma Centralizada para Exibição e Gestão de Portfólios Digitais</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L28 28H4L16 2Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                        <circle cx="16" cy="18" r="4" fill="#06b6d4"/>
+                        <line x1="16" y1="10" x2="16" y2="14" stroke="#06b6d4" stroke-width="1.5"/>
+                    </svg>
+                    <span>Portfolio Hub</span>
+                </div>
+                <nav class="nav">
+                    <a href="#hero">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#governance">Governança</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-
-        <section id="perfil">
-            <h2>Estudante</h2>
-            <div class="profile-section">
-                <img src="https://github.com/dan0978-sys.png" alt="Foto de Perfil do GitHub">
-                <div>
-                    <h3>dan0978-sys</h3>
-                    <p>Desenvolvedor em Construção | Portfólio focado em arquitetura ágil, segurança de credenciais e versionamento estruturado.</p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/dan0978-sys" target="_blank" style="color: var(--cor-link);">github.com/dan0978-sys</a></p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663673627475/23BM63SXcmjFQxQoBXhCDb/hero-geometric-pattern-2jMdFLqptTKTcsb9zXxRWR.webp" alt="Geometric Pattern">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Arquitetura,<br><span class="highlight">Segurança,</span><br>Versionamento</h1>
+                    <p>Uma plataforma centralizada para exibição, gerenciamento e governança de portfólios digitais construída com rigor técnico e expressão visual.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Explorar Projetos →</a>
+                        <a href="#about" class="btn btn-outline">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="geometric-box"></div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll para explorar</span>
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
 
-        <section id="documentacao">
-            <h2>Memorial de Implantação e Governança</h2>
-            
-            <h3>1. Planejamento da Implantação</h3>
-            <p>O ciclo de vida da implantação da infraestrutura foi integralmente arquitetado utilizando o suporte e a inteligência do Google GEMINI como guia estratégico, estabelecendo a correta parametrização de pastas e inicialização do ambiente.</p>
-
-            <h3>2. Configuração Inicial e Integração com GitHub</h3>
-            <p>Foi estabelecido um repositório dedicado hospedado no GitHub para centralizar o armazenamento do código do PortfolioHUB, integrando os recursos locais de desenvolvimento ao versionamento remoto síncrono.</p>
-
-            <h3>3. Gestão de Usuários e Políticas de Segurança</h3>
-            <p>Alinhado com as orientações do Google GEMINI para garantir a conformidade normativa e as melhores práticas de mercado:</p>
-            <ul>
-                <li><strong>Isolamento de Credenciais:</strong> Configuração e controle restrito de identidade local e autenticação do usuário do Git através do VS Code.</li>
-                <li><strong>Proteção de Repositórios:</strong> Emprego de diretrizes para salvaguardar chaves criptográficas, tokens de APIs e chaves privadas, prevenindo vazamentos acidentais em repositórios públicos.</li>
-            </ul>
-
-            <h3>4. Finalização da Integração, Testes e Production</h3>
-            <p>A fase de homologação validou a integridade da aplicação estruturada em HTML5 e CSS3 nativos. O ambiente foi preparado e publicado com sucesso para lançamento em ambiente de produção real através do recurso GitHub Pages.</p>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos Centralizados</h2>
-            <p>Repositórios ativos e sincronizados com a plataforma PortfolioHUB:</p>
-            
-            <div class="grid-projetos">
-                
-                <div class="card-projeto">
-                    <span class="badge">Repositório Oficial</span>
-                    <h3>portifoliohub</h3>
-                    <p>Contém toda a árvore de arquivos, histórico de commits sequenciais e a documentação técnica da implantação estrutural da plataforma.</p>
-                    <a href="https://github.com/dan0978-sys/portifoliohub" target="_blank" class="btn-link">Acessar Código</a>
-                </div>
-
-                <div class="card-projeto">
-                    <span class="badge">Ambiente de Produção</span>
-                    <h3>GitHub Pages Live</h3>
-                    <p>Instância online e pública do projeto, configurada para entrega automatizada de atualizações estáveis na internet.</p>
-                    <a href="https://dan0978-sys.github.io/portifoliohub/" target="_blank" class="btn-link">Ver Site Online</a>
-                </div>
-
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o Projeto</h2>
+                <p>O PortfolioHUB é uma plataforma centralizada desenvolvida com suporte estratégico da inteligência artificial Google GEMINI, focada em exibição, gerenciamento e governança de portfólios digitais e projetos acadêmicos.</p>
             </div>
-        </section>
 
-    </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7V12C2 18.6 12 22 12 22S22 18.6 22 12V7L12 2Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Arquitetura Ágil</h3>
+                    <p>Estrutura de código bem organizada com commits semânticos e versionamento estruturado.</p>
+                </div>
 
-    <footer>
-        <p>Desafio PortfolioHUB — Entrega Final | Atualizado em 14/06/2026</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1C6.48 1 2 5.48 2 11C2 16.52 6.48 21 12 21C17.52 21 22 16.52 22 11C22 5.48 17.52 1 12 1Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                            <path d="M12 5V11L16 13" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Segurança de Credenciais</h3>
+                    <p>Isolamento de acesso, tokens criptográficos e prevenção contra exposição de dados.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H21V21H3V3Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                            <path d="M3 9H21" stroke="#06b6d4" stroke-width="2"/>
+                            <path d="M9 3V21" stroke="#06b6d4" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Versionamento Centralizado</h3>
+                    <p>Controle de versão com rastreabilidade completa e colaboração estruturada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos Centralizados</h2>
+                <p>Repositórios ativos e sincronizados com a plataforma PortfolioHUB, demonstrando arquitetura, segurança e versionamento estruturado.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>PortfolioHUB</h3>
+                    <p>Plataforma centralizada para exibição e gerenciamento de portfólios digitais com integração GitHub Pages.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">GitHub Pages</span>
+                        <span class="tag">Governança</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dan0978-sys/portifoliohub" target="_blank" class="link-btn">Código</a>
+                        <a href="https://dan0978-sys.github.io/portifoliohub/" target="_blank" class="link-btn primary">Live</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Arquitetura de Segurança</h3>
+                    <p>Implementação de políticas de segurança, isolamento de credenciais e prevenção contra exposição de dados sensíveis.</p>
+                    <div class="tags">
+                        <span class="tag">Segurança</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Compliance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dan0978-sys" target="_blank" class="link-btn">Código</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Versionamento Estruturado</h3>
+                    <p>Sistema de commits semânticos com rastreabilidade completa e colaboração centralizada em repositório remoto.</p>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Commits Semânticos</span>
+                        <span class="tag">Colaboração</span>
+                        <span class="tag">Rastreabilidade</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/dan0978-sys" target="_blank" class="link-btn">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance" class="governance">
+        <div class="container">
+            <div class="section-header">
+                <h2>Memorial de Implantação</h2>
+                <p>Processo estruturado de desenvolvimento, segurança e governança que guiou a criação e implantação da plataforma PortfolioHUB.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Planejamento da Implantação</h3>
+                        <p>O ciclo de vida foi estruturado seguindo um plano de implantação focado em entrega contínua, com suporte estratégico do Google GEMINI para guiar toda a trilha de desenvolvimento.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Configuração Inicial e Integração com GitHub</h3>
+                        <p>Criação de repositório exclusivo no GitHub, inicialização do Git e vinculação à branch principal para recebimento síncrono de arquivos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Gestão de Usuários e Políticas de Segurança</h3>
+                        <p>Configuração restrita de credenciais, isolamento de acesso com tokens criptográficos e prevenção contra exposição de dados sensíveis.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Compartilhamento e Controle de Acesso</h3>
+                        <p>Gerenciamento através de commits semânticos documentados, estrutura pronta para colaboração e merge seguro de alterações.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Finalização da Integração e Testes</h3>
+                        <p>Validação de integridade em HTML5 e CSS3 nativos, testes de responsividade e lançamento em produção via GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <div class="achievement-item">
+                    <span class="achievement-label">Commits Semânticos</span>
+                    <span class="achievement-value">4+</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-label">Repositórios Sincronizados</span>
+                    <span class="achievement-value">2</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-label">Políticas de Segurança</span>
+                    <span class="achievement-value">Implementadas</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-label">Ambiente de Produção</span>
+                    <span class="achievement-value">GitHub Pages</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-label">Conformidade Normativa</span>
+                    <span class="achievement-value">Validada</span>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-label">Acessibilidade</span>
+                    <span class="achievement-value">Completa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L28 28H4L16 2Z" stroke="#06b6d4" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="18" r="4" fill="#06b6d4"/>
+                            <line x1="16" y1="10" x2="16" y2="14" stroke="#06b6d4" stroke-width="1.5"/>
+                        </svg>
+                        <span>Portfolio Hub</span>
+                    </div>
+                    <p>Plataforma centralizada para exibição e gerenciamento de portfólios digitais com rigor técnico.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="https://github.com/dan0978-sys/portifoliohub" target="_blank">Repositório Principal</a></li>
+                        <li><a href="https://dan0978-sys.github.io/portifoliohub/" target="_blank">PortfolioHUB Live</a></li>
+                        <li><a href="https://github.com/dan0978-sys" target="_blank">Perfil GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Conecte-se</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/dan0978-sys" target="_blank" class="social-link">GitHub</a>
+                        <a href="mailto:contact@example.com" class="social-link">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Desafio PortfolioHUB — Entrega Final | Desenvolvido com rigor técnico e expressão visual</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
